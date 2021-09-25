@@ -88,7 +88,7 @@
 export default {
     name: 'HomePage',
     metaInfo: {
-        title: 'Hello, world!',
+        title: 'HomePage',
     },
 }
 </script>
