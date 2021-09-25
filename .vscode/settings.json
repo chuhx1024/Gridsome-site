@@ -1,0 +1,20 @@
+{
+    // eslint相关 start--------
+    "editor.formatOnSave": false, // 必须关闭vs code 的默认保存格式化
+    "editor.codeActionsOnSave": { 
+        "source.fixAll.eslint": true,  // 用项目的eslint规则 格式化代码
+        "source.fixAll.stylelint": true  // 用项目的stylelint规则 格式化代码
+    },
+    "eslint.validate": [
+        "javascript",
+        "vue",
+        "html",
+        "css",
+        "jsx",
+        "js",
+    ],
+    "vetur.format.defaultFormatter.html": "none",
+    "vetur.format.defaultFormatter.js": "none",
+    "vetur.format.options.tabSize": 4,
+    // eslint相关结束 end------
+}
