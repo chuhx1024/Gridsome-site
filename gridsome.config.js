@@ -15,4 +15,12 @@ module.exports = {
             },
         },
     ],
+    templates: {
+        BlogPost: [
+            {
+                path: '/markdowns/:id',
+                component: './src/templates/Markdown.vue',
+            },
+        ],
+    },
 }
