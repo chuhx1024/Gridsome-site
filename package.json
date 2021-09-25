@@ -5,9 +5,11 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "lint:css": "stylelint **/**/**/*.{html,vue,css,sass,scss,less} --fix"  
+    "lint:css": "stylelint **/**/**/*.{html,vue,css,sass,scss,less} --fix"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "5.13.0",
+    "bootstrap": "4.5.0",
     "gridsome": "^0.7.0"
   },
   "devDependencies": {

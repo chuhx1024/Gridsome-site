@@ -925,6 +925,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fortawesome/fontawesome-free@5.13.0":
+  version "5.13.0"
+  resolved "https://registry.nlark.com/@fortawesome/fontawesome-free/download/@fortawesome/fontawesome-free-5.13.0.tgz#fcb113d1aca4b471b709e8c9c168674fbd6e06d9"
+  integrity sha1-/LET0ayktHG3CejJwWhnT71uBtk=
+
 "@gridsome/cli@^0.3.4":
   version "0.3.4"
   resolved "https://registry.npm.taobao.org/@gridsome/cli/download/@gridsome/cli-0.3.4.tgz#42fa7a4368a80bd04ec497c93cae5a66b041fe22"
@@ -2045,6 +2050,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/boolbase/download/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+
+bootstrap@4.5.0:
+  version "4.5.0"
+  resolved "https://registry.nlark.com/bootstrap/download/bootstrap-4.5.0.tgz#97d9dbcb5a8972f8722c9962483543b907d9b9ec"
+  integrity sha1-l9nby1qJcvhyLJliSDVDuQfZuew=
 
 boxen@^4.2.0:
   version "4.2.0"
