@@ -7,8 +7,8 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-10 mx-auto">
                         <div class="site-heading">
-                            <h1>Clean Blog</h1>
-                            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+                            <h1>Chuhx's Blog</h1>
+                            <span class="subheading">A Blog site create by Gridsome + Strapi + GraphQL</span>
                         </div>
                     </div>
                 </div>
@@ -19,57 +19,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
-                    <div class="post-preview">
-                        <a href="post.html">
+                    <div class="post-preview" v-for="item in $page.allStrapiArticle.edges" :key=item.node.id>
+                        <g-link :to="/articleDetail/ + item.node.id">
                             <h2 class="post-title">
-                                Man must explore, and this is exploration at its greatest
+                                {{item.node.title}}
                             </h2>
                             <h3 class="post-subtitle">
-                                Problems look mighty small from 150 miles up
+                                {{item.node.description}}
                             </h3>
-                        </a>
-                        <p class="post-meta">Posted by
-                            <a href="#">Start Bootstrap</a>
-                            on September 24, 2019</p>
-                    </div>
-                    <hr>
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">
-                                I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                            </h2>
-                        </a>
-                        <p class="post-meta">Posted by
-                            <a href="#">Start Bootstrap</a>
-                            on September 18, 2019</p>
-                    </div>
-                    <hr>
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">
-                                Science has not yet mastered prophecy
-                            </h2>
-                            <h3 class="post-subtitle">
-                                We predict too much for the next year and yet far too little for the next ten.
-                            </h3>
-                        </a>
-                        <p class="post-meta">Posted by
-                            <a href="#">Start Bootstrap</a>
-                            on August 24, 2019</p>
-                    </div>
-                    <hr>
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">
-                                Failure is not an option
-                            </h2>
-                            <h3 class="post-subtitle">
-                                Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-                            </h3>
-                        </a>
-                        <p class="post-meta">Posted by
-                            <a href="#">Start Bootstrap</a>
-                            on July 8, 2019</p>
+                        </g-link>
+                        <p class="post-meta">{{item.node.created_at}}</p>
                     </div>
                     <hr>
                     <!-- Pager -->
@@ -83,6 +42,21 @@
         <hr>
     </Layout>
 </template>
+
+<page-query>
+query {
+ allStrapiArticle {
+    edges {
+      node {
+        id,
+        title,
+        description,
+        created_at
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 export default {
